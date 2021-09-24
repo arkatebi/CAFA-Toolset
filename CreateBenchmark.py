@@ -121,7 +121,7 @@ def write_LK_benchmarks(protName,
                 print >> bmfile_LK_xxo_handle, str(protName) + '\t' + str(term)
     elif ontType.upper()=='MFO':
         if protName not in t1_mfo_dict and protName in t2_xxo_dict and \
-          (protName in t1_cco_dict or protName in t1_cco_dict):
+          (protName in t1_bpo_dict or protName in t1_cco_dict):
         # Limited-Knowledge benchmarks: MFO type
             for term in t2_xxo_dict[protName]:
                 print >> bmfile_LK_xxo_handle, str(protName) + '\t' + str(term)
